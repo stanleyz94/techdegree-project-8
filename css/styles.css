@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+hr {
+  margin-top: 1.5em;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  min-height: 100%;
+}
+h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 18px;
+  margin-left: 0.8em;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+p,
+a {
+  margin-left: 0.8em;
+  color: #cccccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.profile-container {
+  display: flex;
+
+  background: #fff;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+.profile-container:hover {
+  background: rgba(207, 207, 207, 0.4);
+  cursor: pointer;
+}
+
+img {
+  border-radius: 100px;
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-text-container {
+  flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.profile-container-modal {
+  position: relative;
+  width: 300px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px;
+  background: #fff;
+  margin: 12% auto auto;
+}
+
+.profile-container-modal p {
+  margin-top: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1em 1em 1em;
+  padding-top: 1em;
+}
+
+.searchInput {
+  height: 25px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 2px;
+  padding: 5px;
+}
